@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E9F0D1B2CCBD8870079AB4B /* ProcedureChartList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F0D1A2CCBD8820079AB4B /* ProcedureChartList.swift */; };
+		5E9F0D1D2CCBE33C0079AB4B /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F0D1C2CCBE3370079AB4B /* Procedure.swift */; };
+		5EB054C92CCA587300D9C3CA /* PDFImageAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB054C82CCA587000D9C3CA /* PDFImageAnnotation.swift */; };
+		77042E4B2BB589710081FDD8 /* SwiftyDropbox in Frameworks */ = {isa = PBXBuildFile; productRef = 77042E4A2BB589710081FDD8 /* SwiftyDropbox */; };
+		77D8077E2BADDE7E000585B8 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 77D8077D2BADDE7E000585B8 /* FirebaseDatabase */; };
+		77D807802BADDE7E000585B8 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 77D8077F2BADDE7E000585B8 /* FirebaseDatabaseSwift */; };
+		77D807822BADDE7E000585B8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 77D807812BADDE7E000585B8 /* FirebaseStorage */; };
+		77D807882BADE00B000585B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D807872BADE00A000585B8 /* GoogleService-Info.plist */; };
+		77D807892BADE00B000585B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D807872BADE00A000585B8 /* GoogleService-Info.plist */; };
+		77D8078A2BADE00B000585B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D807872BADE00A000585B8 /* GoogleService-Info.plist */; };
+		77D8078C2BADE2B1000585B8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 77D8078B2BADE2B1000585B8 /* FirebaseAuth */; };
+		77D807942BB31A4F000585B8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 77D807932BB31A4F000585B8 /* FirebaseFirestore */; };
+		7D050E3E2B6C4D5D00B28434 /* CommonAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D050E3D2B6C4D5D00B28434 /* CommonAssets.swift */; };
+		7D050E402B6D8D2E00B28434 /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D050E3F2B6D8D2E00B28434 /* Tester.swift */; };
+		7D15DA722BACC8ED0098F945 /* DropDownMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D15DA712BACC8ED0098F945 /* DropDownMenus.swift */; };
+		7D3D7D072B5703A70098A5D7 /* ARKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D7D062B5703A70098A5D7 /* ARKApp.swift */; };
+		7D3D7D0B2B5703A70098A5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3D7D0A2B5703A70098A5D7 /* Assets.xcassets */; };
+		7D3D7D0F2B5703A70098A5D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3D7D0E2B5703A70098A5D7 /* Preview Assets.xcassets */; };
+		7D3D7D192B5703A80098A5D7 /* ARKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D7D182B5703A80098A5D7 /* ARKTests.swift */; };
+		7D3D7D232B5703A80098A5D7 /* ARKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D7D222B5703A80098A5D7 /* ARKUITests.swift */; };
+		7D3D7D252B5703A80098A5D7 /* ARKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D7D242B5703A80098A5D7 /* ARKUITestsLaunchTests.swift */; };
+		7D6EB8642C593CDD004C15E4 /* ARKPDF grid.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8632C593CDD004C15E4 /* ARKPDF grid.pdf */; };
+		7D6EB8652C593CDD004C15E4 /* ARKPDF grid.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8632C593CDD004C15E4 /* ARKPDF grid.pdf */; };
+		7D6EB8662C593CDD004C15E4 /* ARKPDF grid.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8632C593CDD004C15E4 /* ARKPDF grid.pdf */; };
+		7D6EB8682C602F4A004C15E4 /* Grid1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6EB8672C602F4A004C15E4 /* Grid1.swift */; };
+		7D6EB8692C602F4A004C15E4 /* Grid1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6EB8672C602F4A004C15E4 /* Grid1.swift */; };
+		7D6EB86A2C602F4A004C15E4 /* Grid1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6EB8672C602F4A004C15E4 /* Grid1.swift */; };
+		7D6EB8702C6031BE004C15E4 /* ARKPDF_grid2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB86F2C6031BE004C15E4 /* ARKPDF_grid2.pdf */; };
+		7D6EB8712C6031BE004C15E4 /* ARKPDF_grid2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB86F2C6031BE004C15E4 /* ARKPDF_grid2.pdf */; };
+		7D6EB8722C6031BE004C15E4 /* ARKPDF_grid2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB86F2C6031BE004C15E4 /* ARKPDF_grid2.pdf */; };
+		7D6EB8742C6031DB004C15E4 /* ARKPDF_grid1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8732C6031DB004C15E4 /* ARKPDF_grid1.pdf */; };
+		7D6EB8752C6031DB004C15E4 /* ARKPDF_grid1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8732C6031DB004C15E4 /* ARKPDF_grid1.pdf */; };
+		7D6EB8762C6031DB004C15E4 /* ARKPDF_grid1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8732C6031DB004C15E4 /* ARKPDF_grid1.pdf */; };
+		7D6EB8782C612166004C15E4 /* Grid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6EB8772C612166004C15E4 /* Grid2.swift */; };
+		7D6EB8802C627708004C15E4 /* ARKPDF_Fluids.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB87F2C627708004C15E4 /* ARKPDF_Fluids.pdf */; };
+		7D6EB8812C627708004C15E4 /* ARKPDF_Fluids.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB87F2C627708004C15E4 /* ARKPDF_Fluids.pdf */; };
+		7D6EB8822C627708004C15E4 /* ARKPDF_Fluids.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB87F2C627708004C15E4 /* ARKPDF_Fluids.pdf */; };
+		7D6EB8842C62771A004C15E4 /* ARKPDF_Medication.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8832C62771A004C15E4 /* ARKPDF_Medication.pdf */; };
+		7D6EB8852C62771A004C15E4 /* ARKPDF_Medication.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8832C62771A004C15E4 /* ARKPDF_Medication.pdf */; };
+		7D6EB8862C62771A004C15E4 /* ARKPDF_Medication.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8832C62771A004C15E4 /* ARKPDF_Medication.pdf */; };
+		7D6EB8882C627721004C15E4 /* ARKPDF_Monitors.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8872C627721004C15E4 /* ARKPDF_Monitors.pdf */; };
+		7D6EB8892C627721004C15E4 /* ARKPDF_Monitors.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8872C627721004C15E4 /* ARKPDF_Monitors.pdf */; };
+		7D6EB88A2C627721004C15E4 /* ARKPDF_Monitors.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EB8872C627721004C15E4 /* ARKPDF_Monitors.pdf */; };
+		7D6EB8942C6AB1A0004C15E4 /* Export2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6EB8932C6AB1A0004C15E4 /* Export2.swift */; };
+		7D6EB8952C6AB1A0004C15E4 /* Export2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6EB8932C6AB1A0004C15E4 /* Export2.swift */; };
+		7D6EB8962C6AB1A0004C15E4 /* Export2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6EB8932C6AB1A0004C15E4 /* Export2.swift */; };
+		7D75F1BD2B7A69B7008F7090 /* ConsentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75F1BC2B7A69B7008F7090 /* ConsentView.swift */; };
+		7D7B33BF2B5C222D00A7F056 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7B33BE2B5C222D00A7F056 /* LoginView.swift */; };
+		7D7B33C22B5DBEEE00A7F056 /* ContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7B33C12B5DBEEE00A7F056 /* ContenView.swift */; };
+		7D7B33C52B5DCF0F00A7F056 /* ProcedureBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7B33C42B5DCF0F00A7F056 /* ProcedureBasicsView.swift */; };
+		7D81E65A2B7127500065582A /* MedHisA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81E6592B7127500065582A /* MedHisA.swift */; };
+		7D81E65C2B73CC570065582A /* MedHisB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81E65B2B73CC570065582A /* MedHisB.swift */; };
+		7DA882882B954F08004786E2 /* Review1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA882872B954F08004786E2 /* Review1.swift */; };
+		7DBF40592B9C92C8009772F5 /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBF40582B9C92C8009772F5 /* Export.swift */; };
+		7DBF405C2B9E0574009772F5 /* Edit View Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBF405B2B9E0574009772F5 /* Edit View Buttons.swift */; };
+		7DDC4C902B842521005765AD /* ProcedureStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC4C8F2B842521005765AD /* ProcedureStart.swift */; };
+		7DDC4C922B850F4A005765AD /* PostOpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC4C912B850F4A005765AD /* PostOpView.swift */; };
+		7DDC4C942B880178005765AD /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC4C932B880178005765AD /* AnswerView.swift */; };
+		7DDC4CA62B8BD8A4005765AD /* UserEntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC4CA52B8BD8A4005765AD /* UserEntryData.swift */; };
+		7DDC4CA82B8C1DC3005765AD /* DrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC4CA72B8C1DC3005765AD /* DrawSignatureView.swift */; };
+		7DDC4CAA2B8C1DFF005765AD /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC4CA92B8C1DFF005765AD /* SignatureView.swift */; };
+		7DDC4CAC2B920A04005765AD /* ProcedureChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC4CAB2B920A04005765AD /* ProcedureChart.swift */; };
+		7DDC4CAE2B921431005765AD /* Tester2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC4CAD2B921431005765AD /* Tester2.swift */; };
+		7DE134452C39B5BC00D06ACE /* ARKPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE134442C39B5BC00D06ACE /* ARKPDF.pdf */; };
+		7DE134462C39B5BC00D06ACE /* ARKPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE134442C39B5BC00D06ACE /* ARKPDF.pdf */; };
+		7DE134472C39B5BC00D06ACE /* ARKPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE134442C39B5BC00D06ACE /* ARKPDF.pdf */; };
+		7DF5D9102C94E24100A4A9B3 /* AdditionalNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5D90F2C94E24000A4A9B3 /* AdditionalNotes.swift */; };
+		7DF7B0642C9F115C0006ABAA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF7B0632C9F115C0006ABAA /* SwiftUIView.swift */; };
+		7DF7B0662C9F47060006ABAA /* Grid2 Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF7B0652C9F47060006ABAA /* Grid2 Image.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D3D7D152B5703A80098A5D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D3D7CFB2B5703A70098A5D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D3D7D022B5703A70098A5D7;
+			remoteInfo = ARK;
+		};
+		7D3D7D1F2B5703A80098A5D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D3D7CFB2B5703A70098A5D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D3D7D022B5703A70098A5D7;
+			remoteInfo = ARK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E9F0D1A2CCBD8820079AB4B /* ProcedureChartList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureChartList.swift; sourceTree = "<group>"; };
+		5E9F0D1C2CCBE3370079AB4B /* Procedure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedure.swift; sourceTree = "<group>"; };
+		5EB054C82CCA587000D9C3CA /* PDFImageAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFImageAnnotation.swift; sourceTree = "<group>"; };
+		77042E4C2BB58A580081FDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		77D807872BADE00A000585B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D050E3D2B6C4D5D00B28434 /* CommonAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAssets.swift; sourceTree = "<group>"; };
+		7D050E3F2B6D8D2E00B28434 /* Tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
+		7D15DA712BACC8ED0098F945 /* DropDownMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenus.swift; sourceTree = "<group>"; };
+		7D3D7D032B5703A70098A5D7 /* ARK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3D7D062B5703A70098A5D7 /* ARKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKApp.swift; sourceTree = "<group>"; };
+		7D3D7D0A2B5703A70098A5D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D3D7D0C2B5703A70098A5D7 /* ARK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ARK.entitlements; sourceTree = "<group>"; };
+		7D3D7D0E2B5703A70098A5D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D3D7D142B5703A80098A5D7 /* ARKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3D7D182B5703A80098A5D7 /* ARKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKTests.swift; sourceTree = "<group>"; };
+		7D3D7D1E2B5703A80098A5D7 /* ARKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3D7D222B5703A80098A5D7 /* ARKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKUITests.swift; sourceTree = "<group>"; };
+		7D3D7D242B5703A80098A5D7 /* ARKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D6EB8632C593CDD004C15E4 /* ARKPDF grid.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ARKPDF grid.pdf"; sourceTree = "<group>"; };
+		7D6EB8672C602F4A004C15E4 /* Grid1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid1.swift; sourceTree = "<group>"; };
+		7D6EB86F2C6031BE004C15E4 /* ARKPDF_grid2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ARKPDF_grid2.pdf; sourceTree = "<group>"; };
+		7D6EB8732C6031DB004C15E4 /* ARKPDF_grid1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ARKPDF_grid1.pdf; sourceTree = "<group>"; };
+		7D6EB8772C612166004C15E4 /* Grid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid2.swift; sourceTree = "<group>"; };
+		7D6EB87F2C627708004C15E4 /* ARKPDF_Fluids.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ARKPDF_Fluids.pdf; sourceTree = "<group>"; };
+		7D6EB8832C62771A004C15E4 /* ARKPDF_Medication.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ARKPDF_Medication.pdf; sourceTree = "<group>"; };
+		7D6EB8872C627721004C15E4 /* ARKPDF_Monitors.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ARKPDF_Monitors.pdf; sourceTree = "<group>"; };
+		7D6EB8932C6AB1A0004C15E4 /* Export2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Export2.swift; sourceTree = "<group>"; };
+		7D75F1BC2B7A69B7008F7090 /* ConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentView.swift; sourceTree = "<group>"; };
+		7D7B33BE2B5C222D00A7F056 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7D7B33C12B5DBEEE00A7F056 /* ContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenView.swift; sourceTree = "<group>"; };
+		7D7B33C42B5DCF0F00A7F056 /* ProcedureBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureBasicsView.swift; sourceTree = "<group>"; };
+		7D81E6592B7127500065582A /* MedHisA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedHisA.swift; sourceTree = "<group>"; };
+		7D81E65B2B73CC570065582A /* MedHisB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedHisB.swift; sourceTree = "<group>"; };
+		7DA882872B954F08004786E2 /* Review1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review1.swift; sourceTree = "<group>"; };
+		7DBF40582B9C92C8009772F5 /* Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Export.swift; sourceTree = "<group>"; };
+		7DBF405B2B9E0574009772F5 /* Edit View Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit View Buttons.swift"; sourceTree = "<group>"; };
+		7DDC4C8F2B842521005765AD /* ProcedureStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureStart.swift; sourceTree = "<group>"; };
+		7DDC4C912B850F4A005765AD /* PostOpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostOpView.swift; sourceTree = "<group>"; };
+		7DDC4C932B880178005765AD /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		7DDC4CA52B8BD8A4005765AD /* UserEntryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryData.swift; sourceTree = "<group>"; };
+		7DDC4CA72B8C1DC3005765AD /* DrawSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawSignatureView.swift; sourceTree = "<group>"; };
+		7DDC4CA92B8C1DFF005765AD /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
+		7DDC4CAB2B920A04005765AD /* ProcedureChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureChart.swift; sourceTree = "<group>"; };
+		7DDC4CAD2B921431005765AD /* Tester2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tester2.swift; sourceTree = "<group>"; };
+		7DE134442C39B5BC00D06ACE /* ARKPDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ARKPDF.pdf; sourceTree = "<group>"; };
+		7DF5D90F2C94E24000A4A9B3 /* AdditionalNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalNotes.swift; sourceTree = "<group>"; };
+		7DF7B0632C9F115C0006ABAA /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		7DF7B0652C9F47060006ABAA /* Grid2 Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grid2 Image.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D3D7D002B5703A70098A5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D807802BADDE7E000585B8 /* FirebaseDatabaseSwift in Frameworks */,
+				77D8077E2BADDE7E000585B8 /* FirebaseDatabase in Frameworks */,
+				77D807822BADDE7E000585B8 /* FirebaseStorage in Frameworks */,
+				77D807942BB31A4F000585B8 /* FirebaseFirestore in Frameworks */,
+				77D8078C2BADE2B1000585B8 /* FirebaseAuth in Frameworks */,
+				77042E4B2BB589710081FDD8 /* SwiftyDropbox in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3D7D112B5703A80098A5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3D7D1B2B5703A80098A5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D36B4092C3028C10019603E /* Test Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DDC4C932B880178005765AD /* AnswerView.swift */,
+				7DA882872B954F08004786E2 /* Review1.swift */,
+				7D050E3F2B6D8D2E00B28434 /* Tester.swift */,
+				7DDC4CAD2B921431005765AD /* Tester2.swift */,
+			);
+			path = "Test Files";
+			sourceTree = "<group>";
+		};
+		7D3D7CFA2B5703A70098A5D7 = {
+			isa = PBXGroup;
+			children = (
+				7DE134442C39B5BC00D06ACE /* ARKPDF.pdf */,
+				7D6EB8632C593CDD004C15E4 /* ARKPDF grid.pdf */,
+				7D6EB8732C6031DB004C15E4 /* ARKPDF_grid1.pdf */,
+				7D6EB86F2C6031BE004C15E4 /* ARKPDF_grid2.pdf */,
+				7DF7B0652C9F47060006ABAA /* Grid2 Image.png */,
+				7D6EB8832C62771A004C15E4 /* ARKPDF_Medication.pdf */,
+				7D6EB87F2C627708004C15E4 /* ARKPDF_Fluids.pdf */,
+				7D6EB8872C627721004C15E4 /* ARKPDF_Monitors.pdf */,
+				7D3D7D052B5703A70098A5D7 /* ARK */,
+				7D3D7D172B5703A80098A5D7 /* ARKTests */,
+				7D3D7D212B5703A80098A5D7 /* ARKUITests */,
+				7D3D7D042B5703A70098A5D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D3D7D042B5703A70098A5D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D3D7D032B5703A70098A5D7 /* ARK.app */,
+				7D3D7D142B5703A80098A5D7 /* ARKTests.xctest */,
+				7D3D7D1E2B5703A80098A5D7 /* ARKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D3D7D052B5703A70098A5D7 /* ARK */ = {
+			isa = PBXGroup;
+			children = (
+				5EB054C82CCA587000D9C3CA /* PDFImageAnnotation.swift */,
+				77042E4C2BB58A580081FDD8 /* Info.plist */,
+				77D807872BADE00A000585B8 /* GoogleService-Info.plist */,
+				7D3D7D062B5703A70098A5D7 /* ARKApp.swift */,
+				7D7B33C12B5DBEEE00A7F056 /* ContenView.swift */,
+				7D15DA712BACC8ED0098F945 /* DropDownMenus.swift */,
+				7DDC4CA52B8BD8A4005765AD /* UserEntryData.swift */,
+				7D050E3D2B6C4D5D00B28434 /* CommonAssets.swift */,
+				7DDC4CA72B8C1DC3005765AD /* DrawSignatureView.swift */,
+				7DDC4CA92B8C1DFF005765AD /* SignatureView.swift */,
+				7D7B33C32B5DCC6E00A7F056 /* Views */,
+				7D3D7D0A2B5703A70098A5D7 /* Assets.xcassets */,
+				7D3D7D0C2B5703A70098A5D7 /* ARK.entitlements */,
+				7D3D7D0D2B5703A70098A5D7 /* Preview Content */,
+			);
+			path = ARK;
+			sourceTree = "<group>";
+		};
+		7D3D7D0D2B5703A70098A5D7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7D3D7D0E2B5703A70098A5D7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D3D7D172B5703A80098A5D7 /* ARKTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D3D7D182B5703A80098A5D7 /* ARKTests.swift */,
+			);
+			path = ARKTests;
+			sourceTree = "<group>";
+		};
+		7D3D7D212B5703A80098A5D7 /* ARKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D3D7D222B5703A80098A5D7 /* ARKUITests.swift */,
+				7D3D7D242B5703A80098A5D7 /* ARKUITestsLaunchTests.swift */,
+			);
+			path = ARKUITests;
+			sourceTree = "<group>";
+		};
+		7D7B33C32B5DCC6E00A7F056 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E9F0D1C2CCBE3370079AB4B /* Procedure.swift */,
+				5E9F0D1A2CCBD8820079AB4B /* ProcedureChartList.swift */,
+				7D7B33BE2B5C222D00A7F056 /* LoginView.swift */,
+				7D7B33C42B5DCF0F00A7F056 /* ProcedureBasicsView.swift */,
+				7D81E6592B7127500065582A /* MedHisA.swift */,
+				7D81E65B2B73CC570065582A /* MedHisB.swift */,
+				7D75F1BC2B7A69B7008F7090 /* ConsentView.swift */,
+				7DDC4C8F2B842521005765AD /* ProcedureStart.swift */,
+				7DDC4CAB2B920A04005765AD /* ProcedureChart.swift */,
+				7DDC4C912B850F4A005765AD /* PostOpView.swift */,
+				7DBF40582B9C92C8009772F5 /* Export.swift */,
+				7D6EB8932C6AB1A0004C15E4 /* Export2.swift */,
+				7D6EB8672C602F4A004C15E4 /* Grid1.swift */,
+				7D6EB8772C612166004C15E4 /* Grid2.swift */,
+				7DF5D90F2C94E24000A4A9B3 /* AdditionalNotes.swift */,
+				7DF7B0632C9F115C0006ABAA /* SwiftUIView.swift */,
+				7DBF405A2B9E04ED009772F5 /* Review Views */,
+				7D36B4092C3028C10019603E /* Test Files */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7DBF405A2B9E04ED009772F5 /* Review Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DBF405B2B9E0574009772F5 /* Edit View Buttons.swift */,
+			);
+			path = "Review Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D3D7D022B5703A70098A5D7 /* ARK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3D7D282B5703A80098A5D7 /* Build configuration list for PBXNativeTarget "ARK" */;
+			buildPhases = (
+				7D3D7CFF2B5703A70098A5D7 /* Sources */,
+				7D3D7D002B5703A70098A5D7 /* Frameworks */,
+				7D3D7D012B5703A70098A5D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARK;
+			packageProductDependencies = (
+				77D8077D2BADDE7E000585B8 /* FirebaseDatabase */,
+				77D8077F2BADDE7E000585B8 /* FirebaseDatabaseSwift */,
+				77D807812BADDE7E000585B8 /* FirebaseStorage */,
+				77D8078B2BADE2B1000585B8 /* FirebaseAuth */,
+				77D807932BB31A4F000585B8 /* FirebaseFirestore */,
+				77042E4A2BB589710081FDD8 /* SwiftyDropbox */,
+			);
+			productName = ARK;
+			productReference = 7D3D7D032B5703A70098A5D7 /* ARK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D3D7D132B5703A80098A5D7 /* ARKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3D7D2B2B5703A80098A5D7 /* Build configuration list for PBXNativeTarget "ARKTests" */;
+			buildPhases = (
+				7D3D7D102B5703A80098A5D7 /* Sources */,
+				7D3D7D112B5703A80098A5D7 /* Frameworks */,
+				7D3D7D122B5703A80098A5D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D3D7D162B5703A80098A5D7 /* PBXTargetDependency */,
+			);
+			name = ARKTests;
+			productName = ARKTests;
+			productReference = 7D3D7D142B5703A80098A5D7 /* ARKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D3D7D1D2B5703A80098A5D7 /* ARKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3D7D2E2B5703A80098A5D7 /* Build configuration list for PBXNativeTarget "ARKUITests" */;
+			buildPhases = (
+				7D3D7D1A2B5703A80098A5D7 /* Sources */,
+				7D3D7D1B2B5703A80098A5D7 /* Frameworks */,
+				7D3D7D1C2B5703A80098A5D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D3D7D202B5703A80098A5D7 /* PBXTargetDependency */,
+			);
+			name = ARKUITests;
+			productName = ARKUITests;
+			productReference = 7D3D7D1E2B5703A80098A5D7 /* ARKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D3D7CFB2B5703A70098A5D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					7D3D7D022B5703A70098A5D7 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					7D3D7D132B5703A80098A5D7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 7D3D7D022B5703A70098A5D7;
+					};
+					7D3D7D1D2B5703A80098A5D7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 7D3D7D022B5703A70098A5D7;
+					};
+				};
+			};
+			buildConfigurationList = 7D3D7CFE2B5703A70098A5D7 /* Build configuration list for PBXProject "ARK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D3D7CFA2B5703A70098A5D7;
+			packageReferences = (
+				77D8077C2BADDE7E000585B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				77042E492BB589710081FDD8 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */,
+			);
+			productRefGroup = 7D3D7D042B5703A70098A5D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D3D7D022B5703A70098A5D7 /* ARK */,
+				7D3D7D132B5703A80098A5D7 /* ARKTests */,
+				7D3D7D1D2B5703A80098A5D7 /* ARKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D3D7D012B5703A70098A5D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF7B0662C9F47060006ABAA /* Grid2 Image.png in Resources */,
+				7D3D7D0F2B5703A70098A5D7 /* Preview Assets.xcassets in Resources */,
+				7D6EB8742C6031DB004C15E4 /* ARKPDF_grid1.pdf in Resources */,
+				7D3D7D0B2B5703A70098A5D7 /* Assets.xcassets in Resources */,
+				7D6EB8842C62771A004C15E4 /* ARKPDF_Medication.pdf in Resources */,
+				7D6EB8702C6031BE004C15E4 /* ARKPDF_grid2.pdf in Resources */,
+				7DE134452C39B5BC00D06ACE /* ARKPDF.pdf in Resources */,
+				77D807882BADE00B000585B8 /* GoogleService-Info.plist in Resources */,
+				7D6EB8642C593CDD004C15E4 /* ARKPDF grid.pdf in Resources */,
+				7D6EB8802C627708004C15E4 /* ARKPDF_Fluids.pdf in Resources */,
+				7D6EB8882C627721004C15E4 /* ARKPDF_Monitors.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3D7D122B5703A80098A5D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6EB8652C593CDD004C15E4 /* ARKPDF grid.pdf in Resources */,
+				7DE134462C39B5BC00D06ACE /* ARKPDF.pdf in Resources */,
+				77D807892BADE00B000585B8 /* GoogleService-Info.plist in Resources */,
+				7D6EB8812C627708004C15E4 /* ARKPDF_Fluids.pdf in Resources */,
+				7D6EB8712C6031BE004C15E4 /* ARKPDF_grid2.pdf in Resources */,
+				7D6EB8892C627721004C15E4 /* ARKPDF_Monitors.pdf in Resources */,
+				7D6EB8752C6031DB004C15E4 /* ARKPDF_grid1.pdf in Resources */,
+				7D6EB8852C62771A004C15E4 /* ARKPDF_Medication.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3D7D1C2B5703A80098A5D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6EB8662C593CDD004C15E4 /* ARKPDF grid.pdf in Resources */,
+				7DE134472C39B5BC00D06ACE /* ARKPDF.pdf in Resources */,
+				77D8078A2BADE00B000585B8 /* GoogleService-Info.plist in Resources */,
+				7D6EB8822C627708004C15E4 /* ARKPDF_Fluids.pdf in Resources */,
+				7D6EB8722C6031BE004C15E4 /* ARKPDF_grid2.pdf in Resources */,
+				7D6EB88A2C627721004C15E4 /* ARKPDF_Monitors.pdf in Resources */,
+				7D6EB8762C6031DB004C15E4 /* ARKPDF_grid1.pdf in Resources */,
+				7D6EB8862C62771A004C15E4 /* ARKPDF_Medication.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D3D7CFF2B5703A70098A5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF7B0642C9F115C0006ABAA /* SwiftUIView.swift in Sources */,
+				7D050E402B6D8D2E00B28434 /* Tester.swift in Sources */,
+				7D6EB8782C612166004C15E4 /* Grid2.swift in Sources */,
+				7D050E3E2B6C4D5D00B28434 /* CommonAssets.swift in Sources */,
+				7DDC4C902B842521005765AD /* ProcedureStart.swift in Sources */,
+				7D6EB8682C602F4A004C15E4 /* Grid1.swift in Sources */,
+				7D75F1BD2B7A69B7008F7090 /* ConsentView.swift in Sources */,
+				7D15DA722BACC8ED0098F945 /* DropDownMenus.swift in Sources */,
+				7D81E65A2B7127500065582A /* MedHisA.swift in Sources */,
+				5E9F0D1D2CCBE33C0079AB4B /* Procedure.swift in Sources */,
+				7DF5D9102C94E24100A4A9B3 /* AdditionalNotes.swift in Sources */,
+				7DDC4C942B880178005765AD /* AnswerView.swift in Sources */,
+				7D7B33C22B5DBEEE00A7F056 /* ContenView.swift in Sources */,
+				7DDC4CAA2B8C1DFF005765AD /* SignatureView.swift in Sources */,
+				5EB054C92CCA587300D9C3CA /* PDFImageAnnotation.swift in Sources */,
+				5E9F0D1B2CCBD8870079AB4B /* ProcedureChartList.swift in Sources */,
+				7DDC4CA82B8C1DC3005765AD /* DrawSignatureView.swift in Sources */,
+				7D81E65C2B73CC570065582A /* MedHisB.swift in Sources */,
+				7DDC4CAC2B920A04005765AD /* ProcedureChart.swift in Sources */,
+				7DBF40592B9C92C8009772F5 /* Export.swift in Sources */,
+				7D7B33C52B5DCF0F00A7F056 /* ProcedureBasicsView.swift in Sources */,
+				7D7B33BF2B5C222D00A7F056 /* LoginView.swift in Sources */,
+				7DBF405C2B9E0574009772F5 /* Edit View Buttons.swift in Sources */,
+				7DA882882B954F08004786E2 /* Review1.swift in Sources */,
+				7D3D7D072B5703A70098A5D7 /* ARKApp.swift in Sources */,
+				7DDC4C922B850F4A005765AD /* PostOpView.swift in Sources */,
+				7DDC4CAE2B921431005765AD /* Tester2.swift in Sources */,
+				7DDC4CA62B8BD8A4005765AD /* UserEntryData.swift in Sources */,
+				7D6EB8942C6AB1A0004C15E4 /* Export2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3D7D102B5703A80098A5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3D7D192B5703A80098A5D7 /* ARKTests.swift in Sources */,
+				7D6EB8692C602F4A004C15E4 /* Grid1.swift in Sources */,
+				7D6EB8952C6AB1A0004C15E4 /* Export2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3D7D1A2B5703A80098A5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6EB86A2C602F4A004C15E4 /* Grid1.swift in Sources */,
+				7D3D7D232B5703A80098A5D7 /* ARKUITests.swift in Sources */,
+				7D6EB8962C6AB1A0004C15E4 /* Export2.swift in Sources */,
+				7D3D7D252B5703A80098A5D7 /* ARKUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D3D7D162B5703A80098A5D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D3D7D022B5703A70098A5D7 /* ARK */;
+			targetProxy = 7D3D7D152B5703A80098A5D7 /* PBXContainerItemProxy */;
+		};
+		7D3D7D202B5703A80098A5D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D3D7D022B5703A70098A5D7 /* ARK */;
+			targetProxy = 7D3D7D1F2B5703A80098A5D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7D3D7D262B5703A80098A5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D3D7D272B5703A80098A5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7D3D7D292B5703A80098A5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ARK/ARK.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ARK/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = EtE.ARK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D3D7D2A2B5703A80098A5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ARK/ARK.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ARK/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = EtE.ARK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7D3D7D2C2B5703A80098A5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = EtE.ARKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARK";
+			};
+			name = Debug;
+		};
+		7D3D7D2D2B5703A80098A5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = EtE.ARKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARK";
+			};
+			name = Release;
+		};
+		7D3D7D2F2B5703A80098A5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = EtE.ARKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARK;
+			};
+			name = Debug;
+		};
+		7D3D7D302B5703A80098A5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = EtE.ARKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D3D7CFE2B5703A70098A5D7 /* Build configuration list for PBXProject "ARK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3D7D262B5703A80098A5D7 /* Debug */,
+				7D3D7D272B5703A80098A5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3D7D282B5703A80098A5D7 /* Build configuration list for PBXNativeTarget "ARK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3D7D292B5703A80098A5D7 /* Debug */,
+				7D3D7D2A2B5703A80098A5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3D7D2B2B5703A80098A5D7 /* Build configuration list for PBXNativeTarget "ARKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3D7D2C2B5703A80098A5D7 /* Debug */,
+				7D3D7D2D2B5703A80098A5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3D7D2E2B5703A80098A5D7 /* Build configuration list for PBXNativeTarget "ARKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3D7D2F2B5703A80098A5D7 /* Debug */,
+				7D3D7D302B5703A80098A5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77042E492BB589710081FDD8 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dropbox/SwiftyDropbox.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.6;
+			};
+		};
+		77D8077C2BADDE7E000585B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77042E4A2BB589710081FDD8 /* SwiftyDropbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77042E492BB589710081FDD8 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */;
+			productName = SwiftyDropbox;
+		};
+		77D8077D2BADDE7E000585B8 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77D8077C2BADDE7E000585B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		77D8077F2BADDE7E000585B8 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77D8077C2BADDE7E000585B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		77D807812BADDE7E000585B8 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77D8077C2BADDE7E000585B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		77D8078B2BADE2B1000585B8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77D8077C2BADDE7E000585B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		77D807932BB31A4F000585B8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77D8077C2BADDE7E000585B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7D3D7CFB2B5703A70098A5D7 /* Project object */;
+}
